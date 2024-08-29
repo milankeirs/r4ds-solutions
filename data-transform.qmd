@@ -52,8 +52,7 @@ flights |>
 e.  
 
 ```{r}
-flights |> 
-  filter(arr_delay >= 120 & dep_delay <= 0) |> view()
+flights |> filter(arr_delay > 120) |> filter(dep_delay <= 0) |>view()
 ```
 
 f.  
